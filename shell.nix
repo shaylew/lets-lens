@@ -1,4 +1,4 @@
-{ nixpkgs ? import <nixpkgs> {}, compiler ? "default" }:
+{ nixpkgs ? import <nixpkgs> {}, compiler ? "ghc865" }:
 let
   inherit (nixpkgs) pkgs;
   drv = import ./default.nix { inherit nixpkgs compiler; };
